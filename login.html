@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js"></script>
+      <title>Login form</title>
+    </head>
+    <body>
+         <nav class="active" id="nav">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="jadwal.html">Jadwal</a></li>
+             <li><a href="login.html">Login</a></li>
+           </ul>
+           <button class="icon" id="toggle">
+             <div class="line line1"></div>
+             <div class="line line2"></div>
+           </button>
+         </nav>
+      <div class="login">
+         <img src="login-bg.png" alt="image" class="login__bg">
+
+         <form action="login.php" method="POST" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="email" placeholder="Email ID" required class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+               Don't have an account? <a href="register.html">Register</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
